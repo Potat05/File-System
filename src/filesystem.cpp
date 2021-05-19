@@ -200,3 +200,9 @@ unsigned char File_System::pop() {
     data.pop_back();
     return val;
 }
+
+unsigned char File_System::align() {
+    unsigned char dist = pointer % 8;
+    pointer -= dist;
+    return dist;
+}

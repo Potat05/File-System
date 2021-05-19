@@ -47,6 +47,7 @@ struct File_System {
     void write_string(string val=""); // Write string
 
     unsigned char pop(); // Removes last char from data and returns
+    unsigned char align(); // Align the pointer to the last byte & returns amount it moved
     
     
 };
